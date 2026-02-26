@@ -1,0 +1,106 @@
+body{
+    font-family: Arial;
+    background: linear-gradient(120deg,#74ebd5,#acb6e5);
+    margin:0;
+    text-align:center;
+}
+
+header{
+    background:#333;
+    color:white;
+    padding:15px;
+}
+
+.section-buttons{
+    margin:15px;
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    background:#ff5722;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e64a19;
+}
+
+.upload-box{
+    margin:20px;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    padding:20px;
+}
+
+.item{
+    position:relative;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.item img,
+.item video{
+    max-width:250px;
+    max-height:200px;
+    border-radius:10px;
+}
+
+.delete{
+    position:absolute;
+    top:5px;
+    right:5px;
+    background:red;
+    color:white;
+    border:none;
+    padding:5px 8px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+/* Face Lock */
+
+.face-lock{
+    text-align:center;
+    margin:20px;
+}
+
+.scanner{
+    width:150px;
+    height:150px;
+    border:4px solid #00ffcc;
+    border-radius:50%;
+    margin:20px auto;
+    position:relative;
+    overflow:hidden;
+}
+
+.scan-line{
+    width:100%;
+    height:4px;
+    background:#00ffcc;
+    position:absolute;
+    animation:scan 2s linear infinite;
+}
+
+@keyframes scan{
+    0%{ top:0; }
+    100%{ top:100%; }
+}
+
+#passwordBox input{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}

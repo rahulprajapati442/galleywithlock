@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<header>
+    <h1>📸 My Gallery</h1>
+</header>
+
+<div class="section-buttons">
+    <button onclick="showNormal()">Normal Gallery</button>
+    <button onclick="openPrivate()">Private Gallery</button>
+</div>
+
+<!-- Face Lock UI -->
+<div id="faceLock" class="face-lock" style="display:none;">
+    <div class="scanner">
+        <div class="scan-line"></div>
+    </div>
+    <p>Scanning Face...</p>
+</div>
+
+<!-- Password Box -->
+<div id="passwordBox" style="display:none;">
+    <input type="password" id="privatePass" placeholder="Enter Private Password">
+    <button onclick="checkPassword()">Unlock</button>
+</div>
+
+<!-- Upload -->
+<div class="upload-box">
+    <input type="file" id="fileInput" accept="image/*,video/*" multiple>
+    <button onclick="uploadFiles()">Upload</button>
+</div>
+
+<!-- Gallery -->
+<div class="gallery" id="gallery"></div>
+
+<script src="script2.js"></script>
+</body>
+</html>
